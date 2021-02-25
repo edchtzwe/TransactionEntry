@@ -9,6 +9,7 @@ namespace TransactionEntry.Controllers
     public class EntryController : Controller
     {
         // GET: Entry
+        [HttpGet]
         public ActionResult Search(string query)
         {
             var input = Server.HtmlEncode(query);
